@@ -653,7 +653,153 @@
                 width: 220px;
                 height: 220px;
             }
+
+
         }
+
+        /*Citations partie*/
+
+        /* Style de base élégant */
+.my-quote {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.my-quote p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.my-quote footer {
+  text-align: right;
+  font-weight: bold;
+  color: #f8f9fa;
+}
+
+.my-quote cite {
+  font-style: normal;
+}
+
+/* Version avec guillemets décoratifs */
+.inspirational-quote {
+  max-width: 500px;
+  margin: 3rem auto;
+  padding: 2.5rem 2rem 2rem;
+  background: #f8f9fa;
+  border-left: 4px solid #667eea;
+  position: relative;
+}
+
+.inspirational-quote::before {
+  
+  font-size: 4rem;
+  color: #667eea;
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  font-family: Georgia, serif;
+}
+
+.inspirational-quote blockquote p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+}
+
+.inspirational-quote figcaption {
+  text-align: right;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+/* Version moderne avec animation */
+.portfolio-quote {
+  max-width: 550px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.portfolio-quote:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-quote p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #1a202c;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.portfolio-quote p::before {
+  
+  color: #667eea;
+  font-size: 2rem;
+  position: absolute;
+  left: 0;
+  top: -0.5rem;
+  font-family: Georgia, serif;
+}
+
+.portfolio-quote footer {
+  text-align: right;
+  margin-top: 1rem;
+}
+
+.portfolio-quote a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.portfolio-quote a:hover {
+  text-decoration: underline;
+}
+
+/* Version sombre pour mode nuit */
+.dark-quote {
+  background: #2d3748;
+  color: #e2e8f0;
+  border-left: 4px solid #81e6d9;
+}
+
+.dark-quote p {
+  color: #e2e8f0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .my-quote,
+  .inspirational-quote,
+  .portfolio-quote {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .my-quote p,
+  .inspirational-quote blockquote p,
+  .portfolio-quote p {
+    font-size: 1rem;
+  }
+}
+
+/*---------------------------------*/
     </style>
 </head>
 <body>
@@ -666,6 +812,7 @@
                     <li><a href="#hero"> Accueil</a></li>
                     <li><a href="#about"> À propos</a></li>
                     <li><a href="#projects"> Projets</a></li>
+                    <li><a href="#citations"> Projets</a></li>
                   <!-- <li><a href="#experience"> Expérience</a></li>--> 
                     <li><a href="#contact"> Contact</a></li>
                 </ul>
@@ -704,10 +851,7 @@
         </div>
     </section>
     <div>
-        <p>
-            « Nous ne construisons plus des outils isolés, mais un écosystème numérique interdépendant où la valeur réside dans la synergie. Mon rôle est de connecter ces points technologiques 
-            pour créer un avenir non seulement plus intelligent, mais aussi plus résilient et centré sur l'humain. »
-        </p>
+        
     </div>
 
     <!-- About Section -->
@@ -818,6 +962,41 @@
         </div>
     </section>
 
+    <section id="citations">
+        <!-- Version simple -->
+        <blockquote class="my-quote">
+        <p>
+            Mon code ne sont pas que des
+             instructions ; ce sont les briques
+              d'un avenir plus connecté et intelligent. 
+              Je donne vie à la convergence de l'IA,
+               du Cloud et de la Cybersécurité pour construire 
+            des solutions qui ont du sens.
+        </p>
+        <footer>— <cite>Parfait AMEHOUENOU</cite></footer>
+        </blockquote>
+
+        <!-- Version avec icône -->
+        <figure class="inspirational-quote">
+        <blockquote>
+            <p>Mon rôle est de connecter
+                 les technologies pour créer 
+                 un avenir plus intelligent et 
+                 centré sur l'humain.</p>
+        </blockquote>
+        <figcaption>
+            — <cite>Parfait AMEHOUENOU</cite>
+        </figcaption>
+        </figure>
+
+        <!-- Version avec lien vers votre page À propos -->
+        <blockquote class="portfolio-quote">
+        <p>Chaque ligne de code est une brique posée pour construire l'avenir.</p>
+        <footer>
+            — <cite><a href="about.html">Votre Nom</a></cite>
+        </footer>
+        </blockquote>
+    </section>
     <!-- Experience Section 
     <section id="experience">
         <div class="container">
