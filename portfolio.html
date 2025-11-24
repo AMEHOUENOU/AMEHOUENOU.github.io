@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Ingénieur en Systèmes Informatiques</title>
+    <title>AMEHOUENOU - Ingénieur en Systèmes Informatiques</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -219,35 +219,46 @@
             justify-content: flex-end;
         }
 
-        .profile-img {
+        .profile-img-container {
             width: 350px;
             height: 350px;
             border-radius: 50%;
-            background: linear-gradient(145deg, var(--accent), var(--secondary));
-            display: flex;
-            align-items: center;
-            justify-content: center;
             position: relative;
             overflow: hidden;
             box-shadow: 0 10px 30px -10px rgba(100, 255, 218, 0.3);
         }
 
-        .profile-img::before {
+        .profile-img-container::before {
             content: '';
             position: absolute;
             width: 150%;
             height: 150%;
             background: conic-gradient(var(--accent), var(--secondary), var(--accent));
             animation: rotate 10s linear infinite;
+            z-index: 1;
         }
 
-        .profile-img::after {
+        .profile-img-container::after {
             content: '';
             position: absolute;
             width: 94%;
             height: 94%;
             background-color: var(--primary);
             border-radius: 50%;
+            top: 3%;
+            left: 3%;
+            z-index: 2;
+        }
+
+        .profile-img {
+            position: absolute;
+            width: 94%;
+            height: 94%;
+            border-radius: 50%;
+            top: 3%;
+            left: 3%;
+            object-fit: cover;
+            z-index: 3;
         }
 
         @keyframes rotate {
@@ -326,20 +337,19 @@
 
         .project-img {
             height: 200px;
-            background-color: var(--accent);
             position: relative;
             overflow: hidden;
         }
 
-        .project-img::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
+        .project-img img {
             width: 100%;
             height: 100%;
-            background: linear-gradient(45deg, var(--accent), var(--primary));
-            opacity: 0.7;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .project-card:hover .project-img img {
+            transform: scale(1.05);
         }
 
         .project-content {
@@ -576,7 +586,7 @@
                 margin-bottom: 40px;
             }
 
-            .profile-img {
+            .profile-img-container {
                 width: 280px;
                 height: 280px;
             }
@@ -638,7 +648,7 @@
                 font-size: 0.9rem;
             }
 
-            .profile-img {
+            .profile-img-container {
                 width: 220px;
                 height: 220px;
             }
@@ -650,13 +660,12 @@
     <header id="header">
         <div class="container">
             <nav class="navbar">
-                <a href="#" class="logo">IS</a>
+                <a href="#" class="logo">ISI</a>
                 <ul class="nav-links">
                     <li><a href="#hero"> Accueil</a></li>
                     <li><a href="#about"> À propos</a></li>
                     <li><a href="#projects"> Projets</a></li>
-
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact"> Contact</a></li>
                 </ul>
                 <div class="mobile-menu">
                     <i class="fas fa-bars"></i>
@@ -670,19 +679,23 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
+                    <p></p>
                     <p>Bonjour, je suis</p>
-                    <h1>AMEHOUENOU Parfait</h1>
-                    <h2>Ingénieur en systèmes informatiques | Expert en réseaux, sécurité et infrastructure cloud</h2>
-                    <p>Je conçois, administre et sécurise des infrastructures informatiques fiables et performantes.</p>
+                    <h1>AMEHOUENOU Komi E Parfait</h1>
+                    <h2>Je suis étudiant en Ingénierie des systèmes informatiques |
+                         Expert en réseaux,développement,
+                         sécurité et infrastructure cloud</h2>
+                    <p>Je conçois, administre et sécurise des infrastructures informatiques
+                         fiables et performantes.</p>
                     <div class="hero-buttons">
                         <a href="/cv/CV_AMEHOUENOU.pdf" class="btn btn-primary">Télécharger mon CV</a>
                         <a href="#contact" class="btn">Me contacter</a>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <div class="profile-img">
-                        <!-- Placeholder pour la photo de profil -->
-                         <img src="/images/Parfait.jpeg" alt="Image">
+                    <div class="profile-img-container">
+                        <!-- Remplacez l'URL par le chemin de votre image -->
+                        <img src="/images/Parfait.jpeg" alt="Parfait AMEHOUENOU" class="profile-img">
                     </div>
                 </div>
             </div>
@@ -695,8 +708,8 @@
             <h2>À propos de moi</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Je suis un ingénieur en systèmes informatiques passionné avec plus de 8 ans d'expérience dans la conception, l'administration et la sécurisation d'infrastructures IT.</p>
-                    <p>Diplômé de l'École d'Ingénieurs en Informatique et Systèmes d'Information, j'ai développé une expertise solide dans les domaines des réseaux, de la sécurité et des infrastructures cloud.</p>
+                    <p>Je suis un étudiant en ingénierie des systèmes informatiques passionné dans la conception, l'administration et la sécurisation d'infrastructures IT.</p>
+                    <p>Etudiant à ESAG-NDE en partenariat avec l'école Marocaine SUPMTI, j'ai développé une expertise solide dans les domaines des réseaux, de la sécurité, du dévellopement web et mobile, et des infrastructures cloud.</p>
                     <p>Je suis spécialisé dans l'optimisation des performances des systèmes, l'automatisation des déploiements et la mise en place de solutions de cybersécurité robustes.</p>
                     <p>Mon objectif est de concevoir des infrastructures résilientes, scalables et sécurisées qui répondent aux besoins métiers tout en anticipant les évolutions technologiques.</p>
                 </div>
@@ -739,105 +752,37 @@
         </div>
     </section>
 
-    <!-- Projects Section 
+    <!-- Projects Section -->
     <section id="projects">
         <div class="container">
             <h2>Mes Projets</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-img"></div>
+                    <div class="project-img">
+                        <img src="/images/centralBanque.webp" alt="Application bancaire">
+                    </div>
                     <div class="project-content">
-                        <h3>Migration vers le Cloud Hybride</h3>
-                        <p>Conception et mise en œuvre d'une infrastructure cloud hybride pour une entreprise de 500 employés, réduisant les coûts d'infrastructure de 30%.</p>
+                        <h3>Application banquaire</h3>
+                        <p>J'ai créé une mini application java qui permet de faire des opérations banquaires.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">AWS</span>
-                            <span class="tech-tag">Azure</span>
-                            <span class="tech-tag">Terraform</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#"><i class="fab fa-github"></i> Code</a>
-                            <a href="#"><i class="fas fa-external-link-alt"></i> Détails</a>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Mysql</span>
+                            <span class="tech-tag">Swing</span>
                         </div>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-img"></div>
+                    <div class="project-img">
+                         <img src="/images/multii.jpg" alt="Application multimédia">
+                    </div>
                     <div class="project-content">
-                        <h3>Sécurisation d'Infrastructure Réseau</h3>
-                        <p>Audit complet et renforcement de la sécurité d'un réseau d'entreprise avec mise en place de politiques de sécurité avancées et monitoring 24/7.</p>
+                        <h3>Application laravel de multimédia</h3>
+                        <p>C'est une application en laravel qui permet de générer des mots de passe, de convertir des vidéos et images dans différentes formats.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">Cisco</span>
-                            <span class="tech-tag">Firewall</span>
-                            <span class="tech-tag">SIEM</span>
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">vosk</span>
+                            <span class="tech-tag">ffmpeg</span>
                         </div>
-                        <div class="project-links">
-                            <a href="#"><i class="fab fa-github"></i> Code</a>
-                            <a href="#"><i class="fas fa-external-link-alt"></i> Détails</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img"></div>
-                    <div class="project-content">
-                        <h3>Pipeline CI/CD Automatisé</h3>
-                        <p>Développement d'un pipeline CI/CD complet avec tests automatisés, déploiement blue-green et rollback automatique.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Jenkins</span>
-                            <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">Kubernetes</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#"><i class="fab fa-github"></i> Code</a>
-                            <a href="#"><i class="fas fa-external-link-alt"></i> Détails</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience">
-        <div class="container">
-            <h2>Expérience Professionnelle</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <span class="date">2020 - Présent</span>
-                        <h3>Ingénieur Systèmes & Cloud Senior</h3>
-                        <p>Tech Solutions SA</p>
-                        <ul>
-                            <li>Conception et déploiement d'infrastructures cloud hybrides</li>
-                            <li>Automatisation des processus avec Ansible et Terraform</li>
-                            <li>Mise en place de stratégies de sécurité et conformité</li>
-                            <li>Gestion d'équipe de 5 administrateurs systèmes</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <span class="date">2017 - 2020</span>
-                        <h3>Administrateur Réseaux & Sécurité</h3>
-                        <p>DataSecure Inc.</p>
-                        <ul>
-                            <li>Administration des équipements réseau Cisco</li>
-                            <li>Mise en place et gestion des firewalls et VPN</li>
-                            <li>Audits de sécurité et réponse aux incidents</li>
-                            <li>Formation des équipes aux bonnes pratiques de sécurité</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <span class="date">2015 - 2017</span>
-                        <h3>Technicien Systèmes & Réseaux</h3>
-                        <p>IT Services Group</p>
-                        <ul>
-                            <li>Support technique niveau 2 et 3</li>
-                            <li>Administration des serveurs Windows et Linux</li>
-                            <li>Maintenance préventive et corrective du parc informatique</li>
-                            <li>Gestion des sauvegardes et reprise d'activité</li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -866,10 +811,10 @@
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>  
+                        <a href="https://www.linkedin.com/in/parfait-amehouenou-b10180361/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
                     </div>
-                </div>             
+                </div>
             </div>
         </div>
     </section>
@@ -921,13 +866,6 @@
                     }
                 }
             });
-        });
-
-        // Form submission
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Merci pour votre message ! Je vous répondrai dans les plus brefs délais.');
-            this.reset();
         });
     </script>
 </body>
