@@ -555,6 +555,31 @@
             resize: vertical;
         }
 
+        /*  IMAGE DANS LES COMPETENCES*/
+        .flex-competenceImage {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .flex-competence2image {
+            width: 250px;
+            height: 180px;
+            object-fit: cover;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .flex-competenceimage:hover {
+            transform: scale(1.05);
+        }
+
+
+        /***************************************/
+
         /* Footer */
         footer {
             background-color: var(--secondary);
@@ -759,8 +784,8 @@
         <div class="container">
             <h2>Mes Experiences</h2>
             <div class="about-text">
-                <p>Stage de 2 mois, du 18/08/2025 au 18/10/2</p>
-                <p>Ses activités ont été les suivantes :</p>
+                <p>Stage de 2 mois, du 18/08/2025 au 18/10/2025 à ALLSCEND</p>
+                <p>Mes activités ont été les suivantes :</p>
                 <p>- Projets IT & Automatisation : Contribution à l'analyse des processus et au
                     développement/implémentation de solutions automatisées (RPA, IA). Participation à
                     la conception d'outils et à la rédaction de la documentation technique.</p>
@@ -774,6 +799,41 @@
         </div>
     </section>
 
+    <section>
+        <div>
+            <h2>Compétences</h2>
+            <div class="about-text">
+                <p>Voici quelques-unes de mes compétences clés :</p>
+                <ul>
+                    <li>Administration Systèmes : Expertise en gestion et optimisation des systèmes Linux et Windows.</li>
+                    <li>Réseaux : Solides compétences en configuration, gestion et sécurisation des réseaux Cisco.</li>
+                    <li>Cybersécurité : Connaissance approfondie des pratiques de sécurité, y compris l'audit et la réponse aux incidents.</li>
+                    <li>Cloud Computing : Expérience dans la conception et le déploiement d'infrastructures sur AWS et Azure.</li>
+                    <li>Conteneurisation : Maîtrise de Docker et Kubernetes pour la gestion des applications conteneurisées.</li>
+                    <li>DevOps : Compétences en CI/CD pour automatiser les processus de développement et de déploiement.</li>
+                    <li>Développement web et application: Expertise en création d'applications web 
+                        avec HTML, CSS,PHP, JavaScript, et frameworks modernes
+                         , Laravel,react,flutter.</li>
+                    <div class="flex-competenceImage ">
+                    <img src="/images/HTML5_logo.png" alt="Photo 1" class="flex-image">
+                    <img src="/images/CSS3_logo.png" alt="Photo 2" class="flex-image">
+                    <img src="/images/JavaScript_logo.png" alt="Photo 3" class="flex-image">
+                    <img src="/images/PHP_logo.png" alt="Photo 4" class="flex-image">
+                    </div>
+
+                    <li>Maitrise des suites bureautiques : word, excel, powerpoint</li>
+                    <div class="flex-competenceImage ">
+                    <img src="/images/bureautique.jpg" alt="Photo 1" class="flex-image">
+                    </div>
+                    <li>Automatisation : Compétences en automatisation des tâches grâce à make et n8n </li>
+                    <div class="flex-competenceImage ">
+                    <img src="/images/n8n.png" alt="Photo 1" class="flex-image">
+                    <img src="/images/make.png" alt="Photo 2" class="flex-image">
+                    
+                    </div>
+                </ul>
+        </div>
+    </section>
     <!-- Projects Section -->
     <section id="projects">
         <div class="container">
