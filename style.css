@@ -431,6 +431,32 @@
       margin-bottom: 12px;
     }
 
+    .project-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: var(--accent);
+      color: white;
+      padding: 3px 10px;
+      border-radius: 40px;
+      vertical-align: middle;
+      margin-left: 8px;
+    }
+
+    .project-img--placeholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #16a34a, #65a30d);
+    }
+
+    .project-img--placeholder i {
+      font-size: 3.5rem;
+      color: white;
+    }
+
     .project-tech {
       display: flex;
       flex-wrap: wrap;
