@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v11/font/simple-icons.min.css">
 
-   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -132,16 +132,17 @@
   <div class="container">
     <h2>Projets récents</h2>
     <div class="projects-grid">
-      <div class="project-img"><img src="/images/Citoyen_lome.png" alt="Cite vitrine de citoyen lome"></div>
+      <div class="project-card" data-cat="web">
+        <div class="project-img"><img src="/images/Citoyen_lome.png" alt="Cite vitrine de citoyen lome"></div>
         <div class="project-content">
           <h3>CitoyenConnect Lomé</h3>
           <p>Plateforme de signalement urbain : déchets, inondations, nids-de-poule, éclairage. Trois rôles (citoyen, agent, admin), carte Leaflet, détection de doublons et score d’urgence par IA validé par un humain.</p>
           <div class="project-tech"><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">Node.js</span><span class="tech-tag">Gemini</span></div>
-          
+
           <div class="project-links"><a href="https://citoyenconnect-lom.ai.studio/" target="_blank"><i class="fas fa-external-link-alt"></i> Démo</a></div>
         </div>
       </div>
-      <div class="project-card">
+      <div class="project-card" data-cat="web">
         <div class="project-img project-img--placeholder">
           <i class="fas fa-seedling"></i>
         </div>
@@ -151,7 +152,7 @@
           <div class="project-tech"><span class="tech-tag">Laravel 13</span><span class="tech-tag">Next.js</span><span class="tech-tag">Sanctum</span><span class="tech-tag">React</span></div>
         </div>
       </div>
-      <div class="project-card">
+      <div class="project-card" data-cat="infra">
         <div class="project-img"><img src="/images/ApacheGuacamole/apa1.png" alt="Infrastructure d'accès distant sécurisé Apache Guacamole"></div>
         <div class="project-content">
           <h3>Infrastructure d'Accès Distant Sécurisé</h3>
@@ -159,7 +160,7 @@
           <div class="project-tech"><span class="tech-tag">Docker</span><span class="tech-tag">Apache Guacamole</span><span class="tech-tag">Linux</span><span class="tech-tag">Reverse Proxy</span></div>
         </div>
       </div>
-      <div class="project-card">
+      <div class="project-card" data-cat="desktop">
         <div class="project-img"><img src="/images/centralBanque.webp" alt="Application bancaire"></div>
         <div class="project-content">
           <h3>Application bancaire</h3>
@@ -168,7 +169,7 @@
           <div class="project-links"><a href="https://github.com/AMEHOUENOU/JavaBanque" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
         </div>
       </div>
-      <div class="project-card">
+      <div class="project-card" data-cat="web">
         <div class="project-img"><img src="/images/multii.jpg" alt="Application multimédia"></div>
         <div class="project-content">
           <h3>Multimédia Laravel</h3>
@@ -176,7 +177,7 @@
           <div class="project-tech"><span class="tech-tag">Laravel</span><span class="tech-tag">Vosk</span><span class="tech-tag">FFmpeg</span></div>
         </div>
       </div>
-      <div class="project-card">
+      <div class="project-card" data-cat="mobile">
         <div class="project-img"><img src="/images/CoffeeExpress.jpeg" alt="Coffee Express"></div>
         <div class="project-content">
           <h3>Coffee Express</h3>
@@ -185,7 +186,7 @@
           <div class="project-links"><a href="https://github.com/AMEHOUENOU/coffeExpress" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
         </div>
       </div>
-      <div class="project-card">
+      <div class="project-card" data-cat="web">
         <div class="project-img"><img src="/images/theme-blog-wordpress.jpg" alt="Blog WordPress"></div>
         <div class="project-content">
           <h3>Blog Express</h3>
@@ -193,7 +194,7 @@
           <div class="project-tech"><span class="tech-tag">WordPress</span><span class="tech-tag">Elementor</span></div>
         </div>
       </div>
-      <div class="project-card">
+      <div class="project-card" data-cat="web">
         <div class="project-img"><img src="/images/ecommerce.png" alt="E-commerce"></div>
         <div class="project-content">
           <h3>E-COMMERCE</h3>
@@ -217,7 +218,7 @@
         <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>Lomé, Togo</span></div>
         <div class="social-links">
           <a href="https://www.linkedin.com/in/parfait-amehouenou-b10180361/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://github.com/AMEHENOU" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://github.com/AMEHOUENOU" target="_blank"><i class="fab fa-github"></i></a>
         </div>
         <form action="https://api.web3forms.com/submit" method="POST">
           <input type="hidden" name="access_key" value="1f49fecf-fffa-4a4c-9433-bf3c90824324">
@@ -266,5 +267,8 @@
     }
   });
 </script>
+
+<!-- Filtres de projets + projets d'automatisation (photo, vidéo, description au clic) -->
+<script src="automatisation.js" defer></script>
 </body>
 </html>
