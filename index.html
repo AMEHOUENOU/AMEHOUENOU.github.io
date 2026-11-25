@@ -13,6 +13,38 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v11/font/simple-icons.min.css">
 
   <link rel="stylesheet" href="style.css">
+
+  <!-- Boutons de consultation des attestations de stage -->
+  <style>
+    .exp-certificate {
+      margin-top: 18px;
+    }
+
+    .exp-certificate a {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 10px 16px;
+      border: 1px solid #2563eb;
+      border-radius: 8px;
+      color: #2563eb;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      transition: background-color 0.25s ease, color 0.25s ease;
+    }
+
+    .exp-certificate a:hover,
+    .exp-certificate a:focus-visible {
+      background-color: #2563eb;
+      color: #fff;
+    }
+
+    .exp-certificate a:focus-visible {
+      outline: 3px solid rgba(37, 99, 235, 0.25);
+      outline-offset: 3px;
+    }
+  </style>
 </head>
 <body>
 
@@ -36,7 +68,7 @@
     <div class="hero-text">
       <p class="hero-intro">Bonjour, je suis</p>
       <h1>AMEHOUENOU Komi E. Parfait</h1>
-      <h2>Étudiant LP3 – Ingénierie des Systèmes Informatiques</h2>
+      <h2>Diplômé en Ingénierie des Systèmes Informatiques</h2>
       <p class="hero-desc">Développement Web & Mobile • Automatisation • CI/CD</p>
       <div class="hero-buttons">
         <a href="/cv/CV_AMEHOUENOU.pdf" class="btn btn-primary" target="_blank">
@@ -84,7 +116,7 @@
     <h2>À propos de moi</h2>
     <div class="about-content">
       <div class="about-text">
-        <p>Étudiant en ingénierie des systèmes informatiques, passionné par la conception, l'administration et la sécurisation d'infrastructures IT.</p>
+        <p>Diplômé en ingénierie des systèmes informatiques, passionné par la conception, l'administration et la sécurisation d'infrastructures IT.</p>
         <p>Formé à ESAG-NDE en partenariat avec SUPMTI (Maroc), avec une forte orientation Dev, Cloud et Automatisation.</p>
         <p>Mon objectif : concevoir des systèmes performants, sécurisés et scalables.</p>
       </div>
@@ -108,13 +140,21 @@
   <div class="container">
     <h2>Expérience professionnelle</h2>
     <div class="exp-card">
-      <p><strong>Stagiaire en Développement d'Application</strong> – Moov Africa Togo (Mai 2026 – En cours)</p>
+      <p><strong>Stagiaire en Développement d'Application</strong> – Moov Africa Togo (11 mai 2026 – 10 août 2026)</p>
       <ul class="exp-list">
         <li>Développement de services d'infrastructure : conception et déploiement d'un démon (service d'arrière-plan 24/7) en Python traitant plusieurs millions d'événements journaliers en temps réel sous Windows Server.</li>
-        <li>Implémentation de modules de détection automatique d'anomalies et de récréditation.</li>
+        <li>Développement de modules de détection automatique des anomalies et d'identification des cas nécessitant une récréditation, avec validation par le support.</li>
         <li>Fiabilisation et intégration : configuration du script sous forme de service Windows persistant, avec gestion avancée du logging pour garantir une traçabilité totale des opérations.</li>
         <li>Environnement technique : Python, Windows Server, Services Windows (NSSM / Win32Service), analyse de logs.</li>
       </ul>
+      <div class="exp-certificate">
+        <a href="/documents/attestations/attestation-moov.pdf"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Consulter l'attestation de stage chez Moov Africa Togo (PDF)">
+          <i class="fas fa-file-pdf" aria-hidden="true"></i>
+          Voir mon attestation de stage
+        </a>
+      </div>
     </div>
     <div class="exp-card">
       <p><strong>Stage en ingénierie systèmes</strong> – ALLSCEND (18/08/2025 – 18/10/2025)</p>
@@ -123,6 +163,14 @@
         <li>Veille Technologique & Innovation : recherche approfondie sur l'IA, Blockchain, production de synthèses stratégiques.</li>
         <li>Support Opérationnel : assistance technique de niveau 1, recueil des retours utilisateurs et collaboration interdépartementale.</li>
       </ul>
+      <div class="exp-certificate">
+        <a href="/documents/attestations/attestation-allscend.pdf"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Consulter l'attestation de stage chez ALLSCEND (PDF)">
+          <i class="fas fa-file-pdf" aria-hidden="true"></i>
+          Voir mon attestation de stage
+        </a>
+      </div>
     </div>
   </div>
 </section>
