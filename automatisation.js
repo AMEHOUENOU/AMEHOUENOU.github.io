@@ -10,7 +10,7 @@
       // Vidéos : { type: "file", src: "/automatisation/xxx.mp4" } ou { type: "youtube", id: "ID" }
       videos: [
         { type: "file", src: "/automatisation/vide_auto_1.mp4", label: "Démo 1" },
-        { type: "file", src: "/images/automatisation/vide_auto_2.mp4", label: "Démo 2" }
+        { type: "file", src: "/automatisation/vide_auto_2.mp4", label: "Démo 2" }
       ],
       photos: [
         { src: "/images/automatisation/auto_1.png", alt: "Workflow n8n et accueil du bot sur Telegram" },
@@ -28,6 +28,31 @@
         { title: "Mise en place", text: "n8n hébergé avec Docker, relié à Telegram par un webhook sécurisé. Démo en direct sur demande." }
       ],
       tags: ["n8n", "Google Gemini", "Telegram", "Docker"],
+      links: [{ label: "Workflow sur GitHub", url: "" }]
+    },
+
+    {
+      title: "Veille emploi & stages",
+      category: "Automatisation",
+      summary: "Chaque matin à 8 h, lit le flux RSS d'EmploiTogo, garde les offres qui contiennent tes mots-clés, les classe avec l'IA et envoie un résumé sur Telegram.",
+      cover: "/images/automatisation/veille_emploi_image.png",
+      videos: [
+                { type: "file", src: "/automatisation/veille_emploi.mp4", label: "Démo 1" }
+      ],
+      photos: [
+        { src: "/images/automatisation/veille_emploi_image.png", alt: "Résumé des offres reçu sur Telegram" }
+      ],
+      sections: [
+        { title: "Le problème", text: "Suivre chaque jour les nouvelles offres d'emploi et de stage prend du temps, et les bonnes offres passent vite." },
+        { title: "La solution", text: "Un workflow n8n lit le flux RSS d'EmploiTogo, filtre les offres selon tes mots-clés, puis une IA les classe par pertinence et en tire un résumé." },
+        { title: "Ce qu'il fait", list: [
+          "Se déclenche automatiquement tous les jours à 8 h",
+          "Filtre les offres avec tes mots-clés",
+          "Classe les offres avec l'IA",
+          "Envoie un résumé clair sur Telegram"
+        ] }
+      ],
+      tags: ["n8n", "RSS", "IA", "Telegram"],
       links: [{ label: "Workflow sur GitHub", url: "" }]
     }
   ];
@@ -65,7 +90,7 @@
       const v = it.v;
       if (v.type === "youtube") {
         const f = h("iframe");
-        f.src = "/images/automatisation/vide_auto_2.mp4" + encodeURIComponent(v.id) + "?rel=0";
+        f.src = "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(v.id) + "?rel=0";
         f.title = "Démo : " + current.title; f.allow = "encrypted-media; picture-in-picture; fullscreen"; f.allowFullscreen = true;
         stage.append(f);
       } else {

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AMEHOUENOU – Ingénieur Systèmes Informatiques</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v11/font/simple-icons.min.css">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Boutons de consultation des attestations de stage -->
+  <style>
+    .exp-certificate {
+      margin-top: 18px;
+    }
+
+    .exp-certificate a {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 10px 16px;
+      border: 1px solid #2563eb;
+      border-radius: 8px;
+      color: #2563eb;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      transition: background-color 0.25s ease, color 0.25s ease;
+    }
+
+    .exp-certificate a:hover,
+    .exp-certificate a:focus-visible {
+      background-color: #2563eb;
+      color: #fff;
+    }
+
+    .exp-certificate a:focus-visible {
+      outline: 3px solid rgba(37, 99, 235, 0.25);
+      outline-offset: 3px;
+    }
+  </style>
+</head>
+<body>
+
+<header id="header">
+  <div class="container navbar">
+    <a href="#" class="logo">AMEHOUENOU Parfait</a>
+    <ul class="nav-links">
+      <li><a href="#hero">Accueil</a></li>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#experience">Expérience</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="mobile-menu"><i class="fas fa-bars"></i></div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="container hero-content">
+    <div class="hero-text">
+      <p class="hero-intro">Bonjour, je suis</p>
+      <h1>AMEHOUENOU Komi E. Parfait</h1>
+      <h2>Diplômé en Ingénierie des Systèmes Informatiques</h2>
+      <p class="hero-desc">Développement Web & Mobile • Automatisation • CI/CD</p>
+      <div class="hero-buttons">
+        <a href="/cv/CV_AMEHOUENOU.pdf" class="btn btn-primary" target="_blank">
+          <i class="fas fa-download"></i> Télécharger mon CV
+        </a>
+        <a href="#contact" class="btn btn-outline">Me contacter</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="profile-img-container">
+        <img src="/images/Parfait.jpeg" alt="AMEHOUENOU Parfait" class="profile-img">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECH STACK -->
+<section class="tech-stack">
+  <div class="container">
+    <div class="tech-line">
+      <div class="tech-item"><i class="fab fa-php"></i><span>PHP</span></div>
+      <div class="tech-item"><i class="fab fa-laravel"></i><span>Laravel</span></div>
+      <div class="tech-item"><i class="fab fa-js"></i><span>JavaScript</span></div>
+      <div class="tech-item"><i class="si si-nextdotjs"></i><span>Next.js</span></div>
+      <div class="tech-item"><i class="fab fa-vuejs"></i><span>Vue.js</span></div>
+      <div class="tech-item"><i class="fab fa-react"></i><span>React</span></div>
+      <div class="tech-item"><i class="fab fa-react"></i><span>React Native</span></div>
+    </div>
+    <div class="tech-line">
+      <div class="tech-item"><i class="si si-flutter"></i><span>Flutter</span></div>
+      <div class="tech-item"><i class="fab fa-docker"></i><span>Docker</span></div>
+      <div class="tech-item"><i class="fas fa-code-branch"></i><span>CI/CD</span></div>
+      <div class="tech-item"><i class="fab fa-html5"></i><span>HTML</span></div>
+      <div class="tech-item"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
+      <div class="tech-item"><i class="fab fa-wordpress"></i><span>WordPress</span></div>
+      <div class="tech-item"><i class="si si-n8n"></i><span>n8n</span></div>
+      <div class="tech-item"><i class="si si-make"></i><span>Make</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <h2>À propos de moi</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>Diplômé en ingénierie des systèmes informatiques, passionné par la conception, l'administration et la sécurisation d'infrastructures IT.</p>
+        <p>Formé à ESAG-NDE en partenariat avec SUPMTI (Maroc), avec une forte orientation Dev, Cloud et Automatisation.</p>
+        <p>Mon objectif : concevoir des systèmes performants, sécurisés et scalables.</p>
+      </div>
+      <div class="skills">
+        <h3>Compétences techniques</h3>
+        <div class="skills-grid">
+          <div class="skill-item"><i class="fas fa-laptop-code"></i><h4>Développement Web & Mobile</h4><p>Applications modernes et performantes</p></div>
+          <div class="skill-item"><i class="fas fa-code-branch"></i><h4>CI/CD & DevOps</h4><p>Automatisation des pipelines</p></div>
+          <div class="skill-item"><i class="fas fa-robot"></i><h4>Automatisation</h4><p>n8n, Make, scripts intelligents</p></div>
+          <div class="skill-item"><i class="fab fa-docker"></i><h4>Docker</h4><p>Conteneurisation d’applications</p></div>
+          <div class="skill-item"><i class="fab fa-linux"></i><h4>Linux / Windows</h4><p>Administration systèmes</p></div>
+          <div class="skill-item"><i class="fas fa-network-wired"></i><h4>Réseaux</h4><p>Cisco & Mikrotik</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <h2>Expérience professionnelle</h2>
+    <div class="exp-card">
+      <p><strong>Stagiaire en Développement d'Application</strong> – Moov Africa Togo (11 mai 2026 – 10 août 2026)</p>
+      <ul class="exp-list">
+        <li>Développement de services d'infrastructure : conception et déploiement d'un démon (service d'arrière-plan 24/7) en Python traitant plusieurs millions d'événements journaliers en temps réel sous Windows Server.</li>
+        <li>Développement de modules de détection automatique des anomalies et d'identification des cas nécessitant une récréditation, avec validation par le support.</li>
+        <li>Fiabilisation et intégration : configuration du script sous forme de service Windows persistant, avec gestion avancée du logging pour garantir une traçabilité totale des opérations.</li>
+        <li>Environnement technique : Python, Windows Server, Services Windows (NSSM / Win32Service), analyse de logs.</li>
+      </ul>
+      <div class="exp-certificate">
+        <a href="/documents/attestations/attestation-moov.pdf"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Consulter l'attestation de stage chez Moov Africa Togo (PDF)">
+          <i class="fas fa-file-pdf" aria-hidden="true"></i>
+          Voir mon attestation de stage
+        </a>
+      </div>
+    </div>
+    <div class="exp-card">
+      <p><strong>Stage en ingénierie systèmes</strong> – ALLSCEND (18/08/2025 – 18/10/2025)</p>
+      <ul class="exp-list">
+        <li>Projets IT & Automatisation : analyse de processus et développement de solutions RPA / IA, conception d'outils et documentation technique.</li>
+        <li>Veille Technologique & Innovation : recherche approfondie sur l'IA, Blockchain, production de synthèses stratégiques.</li>
+        <li>Support Opérationnel : assistance technique de niveau 1, recueil des retours utilisateurs et collaboration interdépartementale.</li>
+      </ul>
+      <div class="exp-certificate">
+        <a href="/documents/attestations/attestation-allscend.pdf"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Consulter l'attestation de stage chez ALLSCEND (PDF)">
+          <i class="fas fa-file-pdf" aria-hidden="true"></i>
+          Voir mon attestation de stage
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <h2>Projets récents</h2>
+    <div class="projects-grid">
+      <div class="project-card" data-cat="web">
+        <div class="project-img"><img src="/images/Citoyen_lome.png" alt="Cite vitrine de citoyen lome"></div>
+        <div class="project-content">
+          <h3>CitoyenConnect Lomé</h3>
+          <p>Plateforme de signalement urbain : déchets, inondations, nids-de-poule, éclairage. Trois rôles (citoyen, agent, admin), carte Leaflet, détection de doublons et score d’urgence par IA validé par un humain.</p>
+          <div class="project-tech"><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">Node.js</span><span class="tech-tag">Gemini</span></div>
+
+          <div class="project-links"><a href="https://citoyenconnect-lom.ai.studio/" target="_blank"><i class="fas fa-external-link-alt"></i> Démo</a></div>
+        </div>
+      </div>
+      <div class="project-card" data-cat="web">
+        <div class="project-img project-img--placeholder">
+          <i class="fas fa-seedling"></i>
+        </div>
+        <div class="project-content">
+          <h3>AGRILA — Centrale d'achat numérique <span class="project-badge">Finaliste national</span></h3>
+          <p>Centrale d’achat numérique agricole pour le Togo. Finaliste Student Tech Pulse (IYBA-SEED), parmi les 10 meilleurs projets étudiants du pays.</p>
+          <div class="project-tech"><span class="tech-tag">Laravel 13</span><span class="tech-tag">Next.js</span><span class="tech-tag">Sanctum</span><span class="tech-tag">React</span></div>
+        </div>
+      </div>
+      <div class="project-card" data-cat="infra">
+        <div class="project-img"><img src="/images/ApacheGuacamole/apa1.png" alt="Infrastructure d'accès distant sécurisé Apache Guacamole"></div>
+        <div class="project-content">
+          <h3>Infrastructure d'Accès Distant Sécurisé</h3>
+          <p>Conception et mise en production d'un environnement multi-services conteneurisé avec Docker, intégrant Apache Guacamole comme passerelle de bureau à distance (RDP, SSH, VNC) accessible depuis un simple navigateur, sans client. Isolation réseau des conteneurs, comptes développeurs avec limites de session et audit centralisé pour sécuriser les flux d'accès.</p>
+          <div class="project-tech"><span class="tech-tag">Docker</span><span class="tech-tag">Apache Guacamole</span><span class="tech-tag">Linux</span><span class="tech-tag">Reverse Proxy</span></div>
+        </div>
+      </div>
+      <div class="project-card" data-cat="desktop">
+        <div class="project-img"><img src="/images/centralBanque.webp" alt="Application bancaire"></div>
+        <div class="project-content">
+          <h3>Application bancaire</h3>
+          <p>Mini application Java pour opérations bancaires (dépôt, retrait, virement).</p>
+          <div class="project-tech"><span class="tech-tag">Java</span><span class="tech-tag">MySQL</span><span class="tech-tag">Swing</span></div>
+          <div class="project-links"><a href="https://github.com/AMEHOUENOU/JavaBanque" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+        </div>
+      </div>
+      <div class="project-card" data-cat="web">
+        <div class="project-img"><img src="/images/multii.jpg" alt="Application multimédia"></div>
+        <div class="project-content">
+          <h3>Multimédia Laravel</h3>
+          <p>Génération de mots de passe, conversion vidéo/image avec ffmpeg et Vosk.</p>
+          <div class="project-tech"><span class="tech-tag">Laravel</span><span class="tech-tag">Vosk</span><span class="tech-tag">FFmpeg</span></div>
+        </div>
+      </div>
+      <div class="project-card" data-cat="mobile">
+        <div class="project-img"><img src="/images/CoffeeExpress.jpeg" alt="Coffee Express"></div>
+        <div class="project-content">
+          <h3>Coffee Express</h3>
+          <p>Application Flutter de commande de café avec Firebase.</p>
+          <div class="project-tech"><span class="tech-tag">Flutter</span><span class="tech-tag">Firebase</span></div>
+          <div class="project-links"><a href="https://github.com/AMEHOUENOU/coffeExpress" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+        </div>
+      </div>
+      <div class="project-card" data-cat="web">
+        <div class="project-img"><img src="/images/theme-blog-wordpress.jpg" alt="Blog WordPress"></div>
+        <div class="project-content">
+          <h3>Blog Express</h3>
+          <p>Blog dynamique avec WordPress, Elementor et Envato Elements.</p>
+          <div class="project-tech"><span class="tech-tag">WordPress</span><span class="tech-tag">Elementor</span></div>
+        </div>
+      </div>
+      <div class="project-card" data-cat="web">
+        <div class="project-img"><img src="/images/ecommerce.png" alt="E-commerce"></div>
+        <div class="project-content">
+          <h3>E-COMMERCE</h3>
+          <p>Plateforme e-commerce complète avec Laravel & PostgreSQL.</p>
+          <div class="project-tech"><span class="tech-tag">Laravel</span><span class="tech-tag">PostgreSQL</span></div>
+          <div class="project-links"><a href="https://github.com/AMEHOUENOU/Mon-site_ecommerce.git" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <h2 style="text-align: center; display: block; text-align: center;">Contact</h2>
+    <div class="contact-content">
+      <div>
+        <div class="contact-item"><i class="fas fa-envelope"></i><a href="mailto:amehouenouparfait@gmail.com">amehouenouparfait@gmail.com</a></div>
+        <div class="contact-item"><i class="fas fa-phone"></i><a href="tel:+22891819505">+228 91 81 95 05</a></div>
+        <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>Lomé, Togo</span></div>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/parfait-amehouenou-b10180361/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/AMEHOUENOU" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="1f49fecf-fffa-4a4c-9433-bf3c90824324">
+          <input type="text" name="name" placeholder="Votre nom" required>
+          <input type="email" name="email" placeholder="Votre email" required>
+          <textarea name="message" placeholder="Votre message" required></textarea>
+          <button type="submit">Envoyer le message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">© 2026 AMEHOUENOU Parfait — Tous droits réservés</div>
+</footer>
+
+<script>
+  const header = document.getElementById('header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  const mobileBtn = document.querySelector('.mobile-menu');
+  const navLinks = document.querySelector('.nav-links');
+  if (mobileBtn) {
+    mobileBtn.addEventListener('click', () => {
+      if (navLinks.style.display === 'flex') navLinks.style.display = 'none';
+      else navLinks.style.display = 'flex';
+      navLinks.style.flexDirection = 'column';
+      navLinks.style.position = 'absolute';
+      navLinks.style.top = '70px';
+      navLinks.style.left = '0';
+      navLinks.style.width = '100%';
+      navLinks.style.backgroundColor = 'white';
+      navLinks.style.padding = '30px';
+      navLinks.style.gap = '20px';
+      navLinks.style.borderBottom = '1px solid #e2e8f0';
+      navLinks.style.boxShadow = '0 12px 20px rgba(0,0,0,0.03)';
+    });
+  }
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+      if (navLinks) navLinks.style = '';
+    }
+  });
+</script>
+
+<!-- Filtres de projets + projets d'automatisation (photo, vidéo, description au clic) -->
+<script src="automatisation.js" defer></script>
+</body>
+</html>
